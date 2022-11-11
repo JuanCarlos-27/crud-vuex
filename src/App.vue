@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container d-flex justify-content-center flex-wrap">
+      <FormRegister></FormRegister>
+      <DataTable></DataTable>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormRegister from './components/FormRegister.vue'
+import DataTable from './components/DataTable.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FormRegister,
+    DataTable,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+  body{
+        background-image: linear-gradient(to left,#1198ff, #097784);
+        height: 100vh;
+    }
 </style>
